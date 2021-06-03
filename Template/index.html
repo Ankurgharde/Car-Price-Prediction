@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+
+    <div class = "form" >
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="title">
+            <h1>$ ~~~~~~~~ Predict The Car Price ~~~~~~~~ $</h1>
+                </div>
+            <p style="color:red;"><b>Please fill all below the fields for calculate the selling price of the car <b></p>
+            <h2>Year ( Which year , owner bought a car )</h2>
+            <input id="first" name="Year" type="number ">
+            <br><br>
+            <h2>What is the Showroom Price?(In lakhs)</h2><input id="second" name="Present_Price" required="required">
+             <br><br>
+            <h2>How Many Kilometers Drived?</h2><input id="third" name="Kms_Driven" required="required">
+             <br><br>
+            <h2>How much owners previously had the car(0 or 1 or 3) ?</h2><input id="fourth" name="Owner" required="required">
+             <br><br>
+            <h2>What Is the Fuel type?</h2><select name="Fuel_Type_Petrol" id="fuel" required="required">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Diesel">CNG</option>
+            </select>
+             <br><br>
+            <h2>Are you A Dealer or Individual</h2><select name="Seller_Type_Individual" id="resea" required="required">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+            </select>
+             <br><br>
+            <h2>Transmission type</h2><select name="Transmission_Mannual" id="research" required="required">
+                <option value="Mannual">Manual Car</option>
+                <option value="Automatic">Automatic Car</option>
+            </select>
+             <br><br>
+            <h2>Claculate Selling price of the car</h2>
+            <button id="sub" type="submit ">Calculate</button>
+        </form>
+        <div class="Prediction">
+            <h1>{{ prediction_text }}</h1>
+        </div>
+    </div>
+<br><br><br><br><br>
+</body>
+
+</html>
