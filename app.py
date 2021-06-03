@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 import sklearn
 from sklearn.preprocessing import StandardScaler
-app = Flask(__name__,template_folder='template')
+app = Flask(__name__,template_folder='Template')
 model = pickle.load(open('rf_model.pkl', 'rb'))
 @app.route('/',methods=['GET'])
 def Home():
