@@ -128,7 +128,7 @@ not installed in the environment application is running, it will fail.
 
 pip freeze > requirements.txt (this command is used to create the requirement.txt file)
 
-![](images/prediction.png)
+![](images/requirement.png)
 
 Procfile: Procfile is simply one line of code that provides startup instructions to web server that indicate which file should be executed first when somebody logs into the application. 
 
