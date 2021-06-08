@@ -1,4 +1,4 @@
-$ Car - Prices - Prediction $
+# $ Car - Prices - Prediction $
 
 WebApp
 
@@ -8,9 +8,8 @@ WebApp
 
 •	If this repository helped you please give a ⭐ to the repository 
 
-•(repository files link:-https://github.com/Ankurgharde/Car-Price-Prediction)
 -------------------------------------------------------------------------------------------------------------
-Introduction:
+# Introduction:
 
 •	India has one of the biggest automobile markets all over the globe every day many buyers usually sell their cars after using for the time to another
 buyer, we call them as 2nd /3rd owner etc. 
@@ -24,9 +23,11 @@ the price of the car, this is the toughest question ever.
 the used car 
 
 -------------------------------------------------------------------------------------------------------------
-	Model Training and Validation:
+# 	Model Training and Validation:
 
-	Data Preprocessing: Before Training, any model using any algorithm Data      Preprocessing is that the most significant step and will be the primary step
+ 	Data Preprocessing:
+
+Before Training, any model using any algorithm Data Preprocessing is that the most significant step and will be the primary step
 
 Step l: Import Libraries: 
 
@@ -55,7 +56,7 @@ Step Vl: Feature Scaling:
 
 Since all the data, available in a standard format, so here I do not use any feature scaling techniques.
 
-	Data Training and Modelling:
+# Data Training and Modelling:
 
 •	To train and develop a model, first of all, we need to the dependent and independent variables. Using sklearn. model_selection library and its
 train_test_split function, further this dataset is distributed in the train-test dataset using RandomizedSearchCV tuning of this model is done to find the
@@ -75,7 +76,7 @@ Create & dump the pickle file:
 
 ![](images/pickle.jpg)
 
-	Building Web Application (Click here for code file:-https://github.com/Ankurgharde/Car-Price-Prediction)
+#	Building Web Application 
 
 Now that our machine learning pipeline and model are ready we will start building a web application that can connect to them and generate predictions on
 new data in real-time. There are two parts of this application:
@@ -117,7 +118,7 @@ copy the URL into a browser and it should open a web application hosted on local
 
 Web application opened on local machine
 
-	Deploy the Web App on Heroku 
+#	Deploy the Web App on Heroku 
 
 •	Now that the model is trained, the machine learning pipeline is ready, and the application is tested on local machine, Ml model is ready for deployment.
 
