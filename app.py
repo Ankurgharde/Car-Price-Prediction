@@ -4,6 +4,7 @@ import requests
 import pickle
 import numpy as np
 import sklearn
+from flask_socketio import SocketIO
 from sklearn.preprocessing import StandardScaler
 app = Flask(__name__,template_folder='Template')
 model = pickle.load(open('rf_model.pkl', 'rb'))
